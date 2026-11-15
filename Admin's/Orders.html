@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orders · SA Online Bookstore</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="admin-orders" data-guard="admin">
+
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="app-header"></div>
+
+  <main id="main" class="page">
+    <div class="container">
+      <div class="page-head">
+        <div>
+          <h1>Orders</h1>
+          <p class="muted" id="orders-subtitle">Review, advance or cancel customer orders.</p>
+        </div>
+        <a class="btn btn--ghost" href="Dashboard.html">← Dashboard</a>
+      </div>
+
+      <div class="toolbar">
+        <div class="chips" id="status-chips"></div>
+        <div class="search-field" style="flex:1;min-width:220px">
+          <label class="hidden" for="orders-search">Search orders</label>
+          <input type="search" id="orders-search" placeholder="Search order number, customer or email…" autocomplete="off">
+        </div>
+      </div>
+
+      <div id="orders-root"></div>
+    </div>
+  </main>
+
+  <div id="app-footer"></div>
+  <div class="toast-wrap" id="toast-wrap"></div>
+
+  <!-- Order detail modal -->
+  <div class="modal" id="order-modal" role="dialog" aria-modal="true" aria-labelledby="order-modal-title">
+    <div class="modal__box">
+      <div class="modal__head">
+        <h2 id="order-modal-title">Order</h2>
+        <button type="button" class="modal__close" data-close aria-label="Close">✕</button>
+      </div>
+      <div class="modal__body" id="order-modal-body"></div>
+      <div class="modal__foot" id="order-modal-foot"></div>
+    </div>
+  </div>
+
+  <script src="../assets/js/store.js"></script>
+  <script src="../assets/js/app.js"></script>
+  <script src="../assets/js/pages/admin-orders.js"></script>
+</body>
+</html>

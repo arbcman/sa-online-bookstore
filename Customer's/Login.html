@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in · SA Online Bookstore</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="login" data-shell="none">
+
+  <div class="auth-wrap">
+    <aside class="auth-art" aria-hidden="true">
+      <div class="auth-art__brand">
+        <span class="brand__mark">📚</span>
+        <span>SA Bookstore</span>
+      </div>
+
+      <div>
+        <h1>Every shelf,<br><em>one login.</em></h1>
+        <p>Browse the catalogue, keep your cart between visits and follow every order from
+           pending to delivered.</p>
+      </div>
+
+      <div class="cover cover--1" style="--cover:#6b4f3a">
+        <span class="cover__emoji">🏛️</span>
+        <span class="cover__foot">
+          <span class="cover__title">Palace Walk</span>
+          <span class="cover__author">Naguib Mahfouz</span>
+        </span>
+      </div>
+      <div class="cover cover--2" style="--cover:#2f4f68">
+        <span class="cover__emoji">🏢</span>
+        <span class="cover__foot">
+          <span class="cover__title">The Yacoubian Building</span>
+          <span class="cover__author">Alaa Al Aswany</span>
+        </span>
+      </div>
+      <div class="cover cover--3" style="--cover:#7a3b4e">
+        <span class="cover__emoji">🌆</span>
+        <span class="cover__foot">
+          <span class="cover__title">Utopia</span>
+          <span class="cover__author">Ahmed Khaled Tawfik</span>
+        </span>
+      </div>
+    </aside>
+
+    <section class="auth-panel">
+      <div class="auth-card">
+        <a class="brand" href="Index.html">
+          <span class="brand__mark" aria-hidden="true">📚</span>
+          <span>SA Bookstore<small>Online bookstore</small></span>
+        </a>
+
+        <h2 id="auth-title">Welcome back</h2>
+        <p id="auth-sub">Sign in to continue to your bookstore account.</p>
+
+        <div class="tabs" role="tablist" aria-label="Sign in or register">
+          <button class="tab is-active" type="button" role="tab" aria-selected="true" data-tab="login">Sign in</button>
+          <button class="tab" type="button" role="tab" aria-selected="false" data-tab="register">Create account</button>
+        </div>
+
+        <div class="notice notice--danger hidden" id="form-error" role="alert"></div>
+
+        <!-- Sign in -->
+        <form id="login-form" novalidate>
+          <div class="field">
+            <label for="login-email">Email address</label>
+            <input type="email" id="login-email" name="email" autocomplete="email" placeholder="you@example.com">
+          </div>
+          <div class="field">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" name="password" autocomplete="current-password" placeholder="Your password">
+          </div>
+          <button class="btn btn--primary btn--lg btn--block" type="submit">Sign in</button>
+        </form>
+
+        <!-- Register -->
+        <form id="register-form" class="hidden" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="reg-first">First name</label>
+              <input type="text" id="reg-first" name="firstName" autocomplete="given-name">
+            </div>
+            <div class="field">
+              <label for="reg-last">Last name</label>
+              <input type="text" id="reg-last" name="lastName" autocomplete="family-name">
+            </div>
+          </div>
+          <div class="field">
+            <label for="reg-email">Email address</label>
+            <input type="email" id="reg-email" name="email" autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="reg-phone">Mobile number</label>
+            <input type="tel" id="reg-phone" name="phone" autocomplete="tel" placeholder="01012345678">
+            <div class="hint">Egyptian mobile number, e.g. 01012345678.</div>
+          </div>
+          <div class="field">
+            <label for="reg-street">Street address <span class="muted small">(optional)</span></label>
+            <input type="text" id="reg-street" name="street" autocomplete="street-address">
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="reg-city">City <span class="muted small">(optional)</span></label>
+              <input type="text" id="reg-city" name="city" autocomplete="address-level2">
+            </div>
+            <div class="field">
+              <label for="reg-gov">Governorate <span class="muted small">(optional)</span></label>
+              <input type="text" id="reg-gov" name="governorate" autocomplete="address-level1">
+            </div>
+          </div>
+          <div class="field">
+            <label for="reg-postal">Postal code <span class="muted small">(optional)</span></label>
+            <input type="text" id="reg-postal" name="postalCode" inputmode="numeric" maxlength="5">
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="reg-password">Password</label>
+              <input type="password" id="reg-password" name="password" autocomplete="new-password">
+              <div class="hint">At least 8 characters.</div>
+            </div>
+            <div class="field">
+              <label for="reg-confirm">Confirm password</label>
+              <input type="password" id="reg-confirm" name="confirm" autocomplete="new-password">
+            </div>
+          </div>
+          <button class="btn btn--primary btn--lg btn--block" type="submit">Create account</button>
+        </form>
+
+        <div class="demo-box">
+          <strong>Demo accounts</strong>
+          <div>Customer — <code>cust@gmail.com</code> / <code>customer123</code>
+            <button type="button" class="btn btn--ghost btn--sm" data-demo="customer">Fill</button></div>
+          <div>Administrator — <code>admin@gmail.com</code> / <code>admin123</code>
+            <button type="button" class="btn btn--ghost btn--sm" data-demo="admin">Fill</button></div>
+        </div>
+
+        <p class="small mt-3 mb-0">
+          <a href="Index.html">← Continue browsing as a guest</a>
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <script src="../assets/js/store.js"></script>
+  <script src="../assets/js/app.js"></script>
+  <script src="../assets/js/pages/login.js"></script>
+</body>
+</html>

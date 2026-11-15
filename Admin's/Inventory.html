@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventory · SA Online Bookstore</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="admin-inventory" data-guard="admin">
+
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="app-header"></div>
+
+  <main id="main" class="page">
+    <div class="container">
+      <div class="page-head">
+        <div>
+          <h1>Inventory</h1>
+          <p class="muted" id="inventory-subtitle">Stock levels, low-stock warnings and restocking.</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--ghost" href="Dashboard.html">← Dashboard</a>
+          <a class="btn btn--primary" href="Book_details.html">+ Add book</a>
+        </div>
+      </div>
+
+      <div class="stat-grid" id="inventory-stats"></div>
+
+      <div class="toolbar">
+        <div class="chips" id="stock-filters"></div>
+      </div>
+
+      <div id="inventory-root"></div>
+    </div>
+  </main>
+
+  <div id="app-footer"></div>
+  <div class="toast-wrap" id="toast-wrap"></div>
+
+  <!-- Restock modal -->
+  <div class="modal" id="restock-modal" role="dialog" aria-modal="true" aria-labelledby="restock-title">
+    <div class="modal__box" style="max-width:460px">
+      <div class="modal__head">
+        <h2 id="restock-title">Restock book</h2>
+        <button type="button" class="modal__close" data-close aria-label="Close">✕</button>
+      </div>
+
+      <form id="restock-form" novalidate>
+        <div class="modal__body">
+          <p class="small" id="restock-book-name" style="margin-bottom:1rem"></p>
+
+          <div class="field">
+            <label for="restock-amount">Copies to add</label>
+            <input type="number" id="restock-amount" min="1" step="1" value="10">
+          </div>
+
+          <div class="notice notice--info small">
+            <span aria-hidden="true">i</span>
+            <span>Current stock: <strong id="restock-current">0</strong> copies</span>
+          </div>
+        </div>
+
+        <div class="modal__foot">
+          <button type="button" class="btn" data-close>Cancel</button>
+          <button type="submit" class="btn btn--primary">Add stock</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../assets/js/store.js"></script>
+  <script src="../assets/js/app.js"></script>
+  <script src="../assets/js/pages/admin-inventory.js"></script>
+</body>
+</html>

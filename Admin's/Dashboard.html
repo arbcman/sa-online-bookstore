@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin dashboard · SA Online Bookstore</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-page="admin-dashboard" data-guard="admin">
+
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="app-header"></div>
+
+  <main id="main" class="page">
+    <div class="container">
+      <div class="page-head">
+        <div>
+          <h1>Admin dashboard</h1>
+          <p class="muted" id="dashboard-subtitle">Catalogue, stock and order performance at a glance.</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn" href="Inventory.html">Manage inventory</a>
+          <a class="btn btn--primary" href="Book_details.html">+ Add book</a>
+        </div>
+      </div>
+
+      <div id="dashboard-root"></div>
+    </div>
+  </main>
+
+  <div id="app-footer"></div>
+  <div class="toast-wrap" id="toast-wrap"></div>
+
+  <script src="../assets/js/store.js"></script>
+  <script src="../assets/js/app.js"></script>
+  <script src="../assets/js/pages/admin-dashboard.js"></script>
+</body>
+</html>
