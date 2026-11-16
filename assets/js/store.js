@@ -40,7 +40,6 @@ const Store = (() => {
   // TODO: replace with your own genres. The catalog chips are built from this.
   const GENRES = [
     'Fiction',
-    'Non-fiction',
     'Academic',
     'Children',
     'Business',
@@ -63,7 +62,7 @@ const Store = (() => {
       description: 'Placeholder description — replace with the real synopsis for The Yacoubian Building.'
     },
     {
-      title: 'Utopia', author: 'Ahmed Khaled Tawfik', genre: 'Fiction',
+      title: 'زاد المعاد في هدي خير العباد', author: 'ابن قيم الجوزية', genre: 'Hadith & Islamic Studies',
       publisher: 'Dar El Shorouk', year: 2008, price: 240, stock: 3,
       isbn: '9789770934003', coverColor: '#7a3b4e', coverEmoji: '🌆',
       description: 'Placeholder description — replace with the real synopsis for Utopia.'
@@ -81,7 +80,7 @@ const Store = (() => {
       description: 'Placeholder description — replace with the real synopsis for The Book of the Jinn.'
     },
     {
-      title: 'Taxi', author: 'Khaled Al Khamissi', genre: 'Non-fiction',
+      title: 'الداء والدواء', author: 'ابن قيم الجوزية', genre: 'Hadith & Islamic Studies',
       publisher: 'Dar El Shorouk', year: 2007, price: 190, stock: 0,
       isbn: '9789770933006', coverColor: '#2e5c5a', coverEmoji: '🚕',
       description: 'Placeholder description — replace with the real synopsis for Taxi.'
