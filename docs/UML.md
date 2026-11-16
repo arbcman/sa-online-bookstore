@@ -8,14 +8,18 @@ VS Code (Markdown preview) and <https://mermaid.live>.
 
 ## 1. Use-Case Diagram
 
-Mermaid has no native use-case shape, so actors are drawn as stadium nodes and the use cases sit
-inside the system boundary. Dashed arrows are `«include»` relationships (a use case always
-performs the target use case as part of its own behaviour).
+Mermaid's flowchart has no dedicated UML actor symbol, so the actors use the built-in `person`
+shape (a circular head above a rounded body), which reads like a classic stick-figure actor.
+Use cases sit inside the system boundary and dashed arrows are `«include»` relationships (a use
+case always performs the target use case as part of its own behaviour).
+
+> Requires Mermaid **11.17+**. GitHub's Markdown renderer supports it; if a local preview shows
+> a syntax error, update your Mermaid preview extension.
 
 ```mermaid
 flowchart LR
-    C(["👤 Customer"])
-    A(["🛠️ Administrator"])
+    C@{ shape: person, label: "Customer" }
+    A@{ shape: person, label: "Administrator" }
 
     subgraph SYS["SA Online Bookstore"]
         direction TB
