@@ -44,16 +44,15 @@ const Store = (() => {
     'Business',
     'Biography',
     'History',
-    'Self-help'
+    'Hadith & Islamic Studies',
   ];
 
-  // TODO: replace descriptions (and add/remove books) with your real catalogue.
   const SEED_BOOKS = [
     {
-      title: 'Palace Walk', author: 'Naguib Mahfouz', genre: 'Fiction',
-      publisher: 'AUC Press', year: 1956, price: 285, stock: 14,
+      title: 'مختصر صحيح البخاري ', author: 'الامام زين الدين أحمد عبداللطيف الزبيدي', genre: 'Hadith & Islamic Studies',
+      publisher: 'مكتبة أولاد الشيخ', year: 1956, price: 285, stock: 14,
       isbn: '9789774241985', coverColor: '#6b4f3a', coverEmoji: '🏛️',
-      description: 'Placeholder description — replace with the real synopsis for Palace Walk.'
+      description: 'يُعد من أشهر وأيسر مختصرات صحيح البخاري انتشاراً بين طلاب العلم وعامة القراء؛ حيث يسهل الرجوع إليه وحفظ متون الأحاديث منه دون إطالة الأسانيد أو التكرار.'
     },
     {
       title: 'The Yacoubian Building', author: 'Alaa Al Aswany', genre: 'Fiction',
@@ -98,10 +97,10 @@ const Store = (() => {
       description: 'Placeholder description — replace with the real synopsis for Islamic Architecture in Cairo.'
     },
     {
-      title: 'Ancient Egypt: A Very Short Introduction', author: 'Ian Shaw', genre: 'History',
-      publisher: 'Oxford University Press', year: 2004, price: 260, stock: 11,
+      title: 'البداية والنهاية', author: 'الإمام الحافظ إسماعيل بن عمر بن كثير الدمشقي', genre: 'History',
+      publisher: 'الدار العلمية', year: 774, price: 260, stock: 11,
       isbn: '9780192854193', coverColor: '#8a6a2b', coverEmoji: '🏺',
-      description: 'Placeholder description — replace with the real synopsis for Ancient Egypt: A Very Short Introduction.'
+      description: ' يمثل كتاب البداية والنهاية موسوعة تاريخية شاملة تسرد التاريخ منذ بدء الخلق وقصص الأنبياء، مروراً بالسيرة النبوية والأحداث التاريخية على نظام السنوات حتى عام 768 هـ، ويختم بأشراط الساعة وأهوال يوم القيامة.'
     },
     {
       title: 'Naguib Mahfouz: His Life and Times', author: 'Rasheed El-Enany', genre: 'Biography',
@@ -134,10 +133,10 @@ const Store = (() => {
       description: 'Placeholder description — replace with the real synopsis for The Lean Startup.'
     },
     {
-      title: "Harry Potter and the Philosopher's Stone", author: 'J.K. Rowling', genre: 'Children',
-      publisher: 'Bloomsbury', year: 1997, price: 300, stock: 18,
+      title: "قصص الأنبياء للأطفال", author: 'محمود المصري', genre: 'Children',
+      publisher: 'دار العلوم', year: 1997, price: 300, stock: 18,
       isbn: '9780747532743', coverColor: '#5c3a6b', coverEmoji: '⚡',
-      description: 'Placeholder description — replace with the real synopsis for Harry Potter and the Philosopher\'s Stone.'
+      description: 'يروي مواقف الأنبياء من آدم إلى محمد ﷺ بأسلوب مبسط يركز على العبر الأخلاقية والتربوية.'
     },
     {
       title: 'The Little Prince', author: 'Antoine de Saint-Exupéry', genre: 'Children',
@@ -152,10 +151,10 @@ const Store = (() => {
       description: 'Placeholder description — replace with the real synopsis for Introduction to Algorithms.'
     },
     {
-      title: 'Clean Code', author: 'Robert C. Martin', genre: 'Academic',
-      publisher: 'Prentice Hall', year: 2008, price: 480, stock: 2,
+      title: 'بلوغ المرام من أدلة الأحكام', author: 'الإمام الحافظ شهاب الدين أبو الفضل أحمد بن علي بن حجر العسقلاني', genre: 'Hadith & Islamic Studies',
+      publisher: ' ابن حجر العسقلاني', year: 2008, price: 480, stock: 2,
       isbn: '9780132350884', coverColor: '#2b4a3f', coverEmoji: '🧑‍💻',
-      description: 'Placeholder description — replace with the real synopsis for Clean Code.'
+      description: ' يجمع كتاب بلوغ المرام أصول الأدلة الحديثية التي استنبط منها الفقهاء الأحكام الشرعية، ويضم نحو 1596 حديثاً مرتبة على الأبواب الفقهية بدءاً من الطهارة وحتى كتاب الجامع في الآداب والأخلاق.'
     }
   ];
 
