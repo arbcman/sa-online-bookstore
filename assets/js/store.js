@@ -13,7 +13,7 @@ const Store = (() => {
   /* ---------- constants ---------- */
   // Bump this whenever GENRES / SEED_BOOKS change. Browsers holding an older
   // version automatically reseed on next load (this resets demo carts/orders).
-  const DB_VERSION = 2;
+  const DB_VERSION = 3;
 
   const VAT_RATE = 0.14;          // Egypt VAT
   const DELIVERY_FEE = 50;        // L.E
