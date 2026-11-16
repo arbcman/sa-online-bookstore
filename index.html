@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SA Online Bookstore</title>
+  <meta name="description" content="SA Online Bookstore — browse the shelves, order online, pay in Egyptian Pounds.">
+  <meta http-equiv="refresh" content="0; url=./Customer's/Index.html">
+  <link rel="canonical" href="./Customer's/Index.html">
+  <style>
+    :root {
+      --ink: #2a1c10;
+      --paper: #f3e9d6;
+      --card: #fcf6e8;
+      --line: #e2d1b0;
+      --accent: #96601f;
+      --accent-2: #744714;
+      --serif: "Palatino Linotype", "Book Antiqua", Palatino, "URW Palladio L", Georgia, serif;
+      --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      font-family: var(--sans);
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 50% -10%, #fff8e6 0%, transparent 60%),
+        repeating-linear-gradient(135deg, #f3e9d6 0 14px, #efe3cb 14px 28px);
+    }
+    .card {
+      max-width: 460px;
+      width: 100%;
+      text-align: center;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 40px 32px;
+      box-shadow: 0 30px 60px -25px rgba(42, 28, 16, .45);
+    }
+    .mark { font-size: 40px; line-height: 1; }
+    h1 {
+      margin: 14px 0 6px;
+      font-family: var(--serif);
+      font-size: 26px;
+      letter-spacing: .01em;
+    }
+    p { margin: 0 0 22px; color: #7d6a55; font-size: 15px; }
+    a.btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 3px solid var(--accent-2);
+    }
+    a.btn:hover { background: var(--accent-2); }
+    .tiny { margin-top: 18px; font-size: 12px; color: #9a8770; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="mark" aria-hidden="true">📚</div>
+    <h1>SA Online Bookstore</h1>
+    <p>Opening the shop…</p>
+    <a class="btn" href="./Customer's/Index.html">Enter the bookstore</a>
+    <p class="tiny">Not redirected? Use the button above.</p>
+  </main>
+
+  <script>
+    // Belt and braces: some browsers ignore meta refresh when it is cached.
+    (function () {
+      var target = new URL("Customer's/Index.html", document.baseURI).href;
+      if (location.href !== target) location.replace(target);
+    })();
+  </script>
+</body>
+</html>
